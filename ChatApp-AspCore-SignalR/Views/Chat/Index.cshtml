@@ -1,0 +1,22 @@
+﻿@model Chat
+@{
+    ViewData["Title"] = "Room";
+}
+<div class="chatName">@Model.Name</div>
+<div class="chatBody pb-3 d-flex flex-column">
+    @foreach (Message message in Model.Messages)
+    {
+        <div class="message ml-3">
+            <div class="senderName text-capitalize">mohamed gamal</div>
+            <div class="messageBody overflow-hidden">
+                <p> @message.Text </p>
+                <span class="messageTime float-right">@message.Time</span>
+            </div>
+        </div>
+    }
+</div>
+<form asp-controller="Chat" asp-action="sendMessage" class="chatinput row mx-0 py-4">
+    <input type="text" class="col-10" name="messageBody" />
+    <input type="hidden" name="chatId" value="@Model.Id" />
+    <button class="sendBtn col-2 btn-dark">Send</button>
+</form>

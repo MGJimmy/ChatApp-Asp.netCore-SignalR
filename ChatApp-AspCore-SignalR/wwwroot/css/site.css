@@ -1,0 +1,96 @@
+﻿    input:focus,
+    button:focus {
+        outline: none;
+    }
+    a{color:#fff}
+    a:hover{color:#fff; text-decoration: none;}
+
+    .home{min-height: 100vh;}
+    .home .ChatName {
+        background-color: #1b1e21;
+        display: inline-block;
+        width: 100%;
+        padding: 2rem 0;
+        border-radius: 1rem;
+        transition: all 0.2s ease-in-out;
+    }
+    .home .ChatName:hover {
+        background-color: #1e2225;
+    }
+
+
+    .topNav {
+        height: 10vh;
+    }
+
+    .chat, .sideNav {
+        height: 90vh;
+    }
+
+    .chatName {
+        position: absolute;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        background-color: #343a40;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .roomBtn {
+        background-color: #333;
+        display: inline-block;
+        width: 80%;
+        padding: 1.5rem 0;
+        margin: 1rem 0;
+        color: #fff;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+    }
+
+        .roomBtn:hover {
+            text-decoration: none;
+            color: #fff;
+            background-color: #444;
+        }
+
+    .chatBody {
+        height: 80%;
+        overflow-y: scroll;
+        background-color: #eee;
+    }
+
+        .chatBody .message:first-child {
+            margin-top: auto;
+        }
+
+    .senderName {
+        font-weight: 600;
+    }
+
+    .messageBody {
+        margin-left: 2rem;
+        padding: .5rem 1.5rem;
+        border-radius: 2rem;
+        background-color: #dad7d7;
+        max-width: 50%;
+        display: inline-block;
+    }
+
+    .messageTime {
+        color: #ff6a00;
+    }
+
+
+    .chatinput {
+        height: 20%;
+        background-color: #333;
+    }
+
+    .chatinput input {
+        border-radius: 0.5rem;
+    }
+
+    .chatinput input:focus {
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    }

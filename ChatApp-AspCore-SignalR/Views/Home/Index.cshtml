@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Chat>
+@{
+    Layout = "~/Views/Shared/_homeLayout.cshtml";
+    ViewData["Title"] = "Home";
+}
+<div class="container">
+    <div class="row">
+        @foreach (Chat chat in Model)
+        {
+            <div class="col-3 text-center">
+                <a class="ChatName" asp-controller="Chat" asp-action="Index" asp-route-id="@chat.Id">@chat.Name</a>
+            </div>
+        }
+    </div>
+</div>
